@@ -10,8 +10,11 @@ Metodo: Get http://localhost:8080/broker/producer/pisos/impares
 Query
 
 clave         |  Valor
+
 exchangeName  |  header-exchange
+
 piso          |  impar
+
 messageData   |  Correo para los apartamentos impares
 
 * Enviar la peticion al exchange fanout-piso
