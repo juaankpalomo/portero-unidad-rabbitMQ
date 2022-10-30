@@ -13,8 +13,7 @@ Query
 | ------------- | ------------------------------------ |
 | exchangeName  | header-exchange                      |
 | piso          | Content Cell                         |
-| messageData   | Correo para los apartamentos impares |
-         |  
+| messageData   | Correo para los apartamentos impares |  
 
 
 * Enviar la peticion al exchange fanout-piso
