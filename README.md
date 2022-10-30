@@ -9,13 +9,13 @@ Metodo: Get http://localhost:8080/broker/producer/pisos/impares
 
 Query
 
-clave         |  Valor
+| clave         | Valor                                |
+| ------------- | ------------------------------------ |
+| exchangeName  | header-exchange                      |
+| piso          | Content Cell                         |
+| messageData   | Correo para los apartamentos impares |
+         |  
 
-exchangeName  |  header-exchange
-
-piso          |  impar
-
-messageData   |  Correo para los apartamentos impares
 
 * Enviar la peticion al exchange fanout-piso
 
@@ -23,7 +23,7 @@ Metodo: Get http://localhost:8080/broker/producer/pisos/impares
 
 Query
 
-clave         |  Valor
-exchangeName  |  fanout-exchange
-messageData   |  Correo para todo el piso 
-       
+| clave         | Valor                                |
+| ------------- | ------------------------------------ |
+| exchangeName  | fanout-exchange                      |
+| messageData   | Correo para todo el piso             |
