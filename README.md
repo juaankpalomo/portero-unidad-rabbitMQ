@@ -12,7 +12,7 @@ Query
 | clave         | Valor                                |
 | ------------- | ------------------------------------ |
 | exchangeName  | header-exchange                      |
-| piso          | Content Cell                         |
+| piso          | impar                                |
 | messageData   | Correo para los apartamentos impares |  
 
 
