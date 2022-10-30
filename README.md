@@ -18,7 +18,7 @@ Query
 
 * Enviar la peticion al exchange fanout-piso
 
-Metodo: Get http://localhost:8080/broker/producer/pisos/impares
+Metodo: Get http://localhost:8080/broker/producer/pisos/
 
 Query
 
