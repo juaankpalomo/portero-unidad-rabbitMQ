@@ -5,14 +5,14 @@ proyecto creado para la creación de colas de mensajería de una unidad con exch
 
 * Enviar la peticion al exchange header-piso
 
-Metodo: Get http://localhost:8080/broker/producer/pisos/impares
+Metodo: Get http://localhost:8080/broker/producer/apto/impares
 
 Query
 
 | clave         | Valor                                |
 | ------------- | ------------------------------------ |
 | exchangeName  | header-exchange                      |
-| piso          | impar                                |
+| apto          | impar                                |
 | messageData   | Correo para los apartamentos impares |  
 
 
