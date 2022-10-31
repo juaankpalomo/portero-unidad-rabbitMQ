@@ -26,12 +26,12 @@ public class ResourceREST {
         return Mono.just("Correo repartido a todo el piso");
     }
 
-    @GetMapping(value = "/producer/pisos/impares")
-    public Mono<String> producer(@RequestParam("exchangeName") String exchange, @RequestParam("piso") String apto,
+    @GetMapping(value = "/producer/apto/impares")
+    public Mono<String> producer(@RequestParam("exchangeName") String exchange, @RequestParam("apto") String apto,
                            @RequestParam("messageData") String messageData) {
 
         MessageProperties messageProperties = new MessageProperties();
-        messageProperties.setHeader("piso", apto);
+        messageProperties.setHeader("apto", apto);
         MessageConverter messageConverter = new SimpleMessageConverter();
         Message message = messageConverter.toMessage(messageData, messageProperties);
         amqpTemplate.send(exchange, "", message);

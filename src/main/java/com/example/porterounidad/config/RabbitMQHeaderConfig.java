@@ -23,27 +23,27 @@ public class RabbitMQHeaderConfig {
 
     @Bean
     Binding pisoSixHundredAndOneHeaderBinding(Queue pisoSixHundredAndOne, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndOne).to(headerExchange).where("piso").matches("impar");
+        return BindingBuilder.bind(pisoSixHundredAndOne).to(headerExchange).where("apto").matches("impar");
     }
 
     @Bean
     Binding pisoSixHundredAndTwoHeaderBinding(Queue pisoSixHundredAndTwo, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndTwo).to(headerExchange).where("piso").matches("par");
+        return BindingBuilder.bind(pisoSixHundredAndTwo).to(headerExchange).where("apto").matches("par");
     }
 
     @Bean
     Binding pisoSixHundredAndThreeHeaderBinding(Queue pisoSixHundredAndThree, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndThree).to(headerExchange).where("piso").matches("impar");
+        return BindingBuilder.bind(pisoSixHundredAndThree).to(headerExchange).where("apto").matches("impar");
     }
 
     @Bean
     Binding pisoSixHundredAndFourHeaderBinding(Queue pisoSixHundredAndFour, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndFour).to(headerExchange).where("piso").matches("par");
+        return BindingBuilder.bind(pisoSixHundredAndFour).to(headerExchange).where("apto").matches("par");
     }
 
     @Bean
     Binding pisoSixHundredAndFiveHeaderBinding(Queue pisoSixHundredAndFive, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndFive).to(headerExchange).where("piso").matches("impar");
+        return BindingBuilder.bind(pisoSixHundredAndFive).to(headerExchange).where("apto").matches("impar");
     }
 
     @Bean
