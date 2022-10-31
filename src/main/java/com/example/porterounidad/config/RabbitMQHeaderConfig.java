@@ -17,57 +17,33 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQHeaderConfig {
 
-    @Bean
-    Queue pisoSixHundredAndOneHeader(){
-        return new Queue("piso601Queue", false);
-    }
-
-    @Bean
-    Queue pisoSixHundredAndTwoHeader(){
-        return new Queue("piso602Queue", false);
-    }
-
-    @Bean
-    Queue pisoSixHundredAndThreeHeader(){
-        return new Queue("piso603Queue", false);
-    }
-
-    @Bean
-    Queue pisoSixHundredAndFourHeader(){
-        return new Queue("piso604Queue", false);
-    }
-
-    @Bean
-    Queue pisoSixHundredAndFiveHeader(){
-        return new Queue("piso605Queue", false);
-    }
 
     @Bean
     HeadersExchange headersExchange() {return new HeadersExchange("header-exchange");}
 
     @Bean
-    Binding pisoSixHundredAndOneHeaderBinding(Queue pisoSixHundredAndOneHeader, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndOneHeader).to(headerExchange).where("piso").matches("impar");
+    Binding pisoSixHundredAndOneHeaderBinding(Queue pisoSixHundredAndOne, HeadersExchange headerExchange) {
+        return BindingBuilder.bind(pisoSixHundredAndOne).to(headerExchange).where("piso").matches("impar");
     }
 
     @Bean
-    Binding pisoSixHundredAndTwoHeaderBinding(Queue pisoSixHundredAndTwoHeader, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndTwoHeader).to(headerExchange).where("piso").matches("par");
+    Binding pisoSixHundredAndTwoHeaderBinding(Queue pisoSixHundredAndTwo, HeadersExchange headerExchange) {
+        return BindingBuilder.bind(pisoSixHundredAndTwo).to(headerExchange).where("piso").matches("par");
     }
 
     @Bean
-    Binding pisoSixHundredAndThreeHeaderBinding(Queue pisoSixHundredAndThreeHeader, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndThreeHeader).to(headerExchange).where("piso").matches("impar");
+    Binding pisoSixHundredAndThreeHeaderBinding(Queue pisoSixHundredAndThree, HeadersExchange headerExchange) {
+        return BindingBuilder.bind(pisoSixHundredAndThree).to(headerExchange).where("piso").matches("impar");
     }
 
     @Bean
-    Binding pisoSixHundredAndFourHeaderBinding(Queue pisoSixHundredAndFourHeader, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndFourHeader).to(headerExchange).where("piso").matches("par");
+    Binding pisoSixHundredAndFourHeaderBinding(Queue pisoSixHundredAndFour, HeadersExchange headerExchange) {
+        return BindingBuilder.bind(pisoSixHundredAndFour).to(headerExchange).where("piso").matches("par");
     }
 
     @Bean
-    Binding pisoSixHundredAndFiveHeaderBinding(Queue pisoSixHundredAndFiveHeader, HeadersExchange headerExchange) {
-        return BindingBuilder.bind(pisoSixHundredAndFiveHeader).to(headerExchange).where("piso").matches("impar");
+    Binding pisoSixHundredAndFiveHeaderBinding(Queue pisoSixHundredAndFive, HeadersExchange headerExchange) {
+        return BindingBuilder.bind(pisoSixHundredAndFive).to(headerExchange).where("piso").matches("impar");
     }
 
     @Bean

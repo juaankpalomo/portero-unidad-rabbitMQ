@@ -8,27 +8,5 @@ spring:
     port: 5672
     username: guest
     password: guest
-broker:
-  rabbitmq:
-    exchange: piso
-    601:
-      queue: apto.601.queue
-      routing:
-        key: apto.601
-    602:
-      queue: apto.602.queue
-      routing:
-        key: apto.602
-    603:
-      queue: apto.603.queue
-      routing:
-        key: apto.603
-    604:
-      queue: apto.604.queue
-      routing:
-        key: apto.604
-    605:
-      queue: apto.605.queue
-      routing:
-        key: apto.605
+
 
