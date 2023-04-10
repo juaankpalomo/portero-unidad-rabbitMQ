@@ -5,7 +5,7 @@ proyecto creado para la creación de colas de mensajería de una unidad con exch
 
 * Enviar la peticion al exchange header-piso
 
-Metodo: Get http://localhost:8080/broker/producer/apto/impares
+Metodo: Get http://localhost:8081/broker/producer/apto/impares
 
 Query
 
@@ -18,7 +18,7 @@ Query
 
 * Enviar la peticion al exchange fanout-piso
 
-Metodo: Get http://localhost:8080/broker/producer/pisos/
+Metodo: Get http://localhost:8081/broker/producer/pisos/
 
 Query
 
